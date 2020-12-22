@@ -27,7 +27,7 @@ DRACULA_DISPLAY_TIME=${DRACULA_DISPLAY_TIME:-0}
 DRACULA_DISPLAY_CONTEXT=${DRACULA_DISPLAY_CONTEXT:-0}
 
 # Changes the arrow icon
-DRACULA_ARROW_ICON=${DRACULA_ARROW_ICON:-➜ }
+DRACULA_ARROW_ICON=${DRACULA_ARROW_ICON:->}
 
 # function to detect if git has support for --no-optional-locks
 dracula_test_git_optional_lock() {
@@ -97,7 +97,7 @@ PROMPT+='%F{magenta}%B$(dracula_context)'
 # }}}
 
 # Directory segment {{{
-PROMPT+='%F{blue}%B%c '
+PROMPT+='%F{blue}%B%~ %F{cyan}➜ '
 # }}}
 
 # Async git segment {{{
